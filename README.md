@@ -18,6 +18,15 @@ cat /proc/swaps
 ```bash
 # Check filesystem type (important for btrfs)
 df -T /
+
+# Alternative way to check
+lsblk -f
+
+# Another way to see filesystem info
+mount | grep " / "
+
+# Check all mounted filesystems
+df -T
 ```
 
 ## Create Swap File
